@@ -11,9 +11,9 @@ const CertificatesListView: React.FC<CertificatesListProps> = ({
   certificates,
 }) => {
   return (
-    <div className="max-w-4xl mx-auto p-6 sm:p-8 md:p-10 rounded-lg text-neutral-100">
+    <div className="max-w-4xl mx-auto p-2 sm:p-8 md:p-10 rounded-lg text-neutral-100">
 
-      <ul className="space-y-6 sm:space-y-8">
+      <ul className="">
         {certificates.map((certificate) => (
           <CertificateCard key={certificate.id} certificate={certificate} />
         ))}

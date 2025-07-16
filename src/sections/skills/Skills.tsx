@@ -20,7 +20,7 @@ export const Skills: React.FC = () => {
     "Gestão de projetos: Scrum, Agile, Atlassian Suite",
   ];
   return (
-    <section id="skills" className="px-10 my-10 py-10">
+    <section id="skills" className="my-10 py-10">
       <div className="flex justify-center gap-4 text-5xl font-bold text-gray-300 mb-8">
         <FaBrain />
         <CustomTitle
@@ -29,7 +29,7 @@ export const Skills: React.FC = () => {
           className=" font-bold mb-8 "
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-2">
         <SkillListCard skillList={mySoftSkills} title="SoftSkills" />
         <SkillListCard skillList={myHardSkills} title="HardSkills" />
       </div>

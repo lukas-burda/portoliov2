@@ -12,7 +12,7 @@ const SkillListCard: React.FC<SkillsProps> = ({
   skillList,
 }) => {
   return (
-    <div className="p-4 sm:p-6 md:p-8 bg-gray-950 rounded-lg shadow-lg">
+    <div className="p-4 pb-8 sm:p-6 md:p-8 bg-gray-950 rounded-lg shadow-lg">
       {/* Padding e fundo com sombra para um visual melhor */}
       <h3 className="text-2xl sm:text-3xl font-semibold text-cyan-400 mb-4 flex items-center gap-4">
         {/* Ajustado tamanho do texto e gap para responsividade */}
