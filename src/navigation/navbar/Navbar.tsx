@@ -66,7 +66,8 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center gap-2">
           <h1 className="font-bold font-mono text-2xl sm:text-3xl text-white tracking-wide">
             <a
-              href="/"
+              href="/portfolio/"
+              onClick={closeMenu}
               className="hover:text-cyan-400 transition-colors duration-300"
             >
               Lukas Burda

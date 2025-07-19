@@ -15,13 +15,22 @@ export const AboutMe: React.FC = () => {
       </div>
 
       <p className="text-lg md:text-xl leading-relaxed mb-6">
-        Atualmente sou{" "}
-        <span className="text-cyan-400 font-medium">
-          Coordenador de Desenvolvimento
-        </span>{" "}
-        na <span className="text-cyan-400 font-medium">Neomode</span>, atuando
-        como <span className="text-cyan-400 font-medium">Product Owner</span>{" "}
-        nas frentes de implantação e integração para o varejo omnichannel.
+        Sou <span className="text-cyan-400">entusiasta de tecnologia</span> no geral, tenho mais de 10 anos de experiência na área de tecnologia, estudante de soluções escaláveis, integrações inteligentes e projetos que conectam negócio e performance.
+      </p>
+      <p className="text-lg md:text-xl leading-relaxed mb-6">
+        Iniciei minha jornada em 2014 com infraestrutura e redes. Atendendo empresas de grande porte como a Província Marcas & Patentes Brasil (50+ filiais, 1.000+ colaboradores), fui promovido à liderança do setor de Helpdesk, coordenando operações críticas e implementando servidores físicos/virtuais, redes GPON, WMAN e ambientes VMware e Linux.
+      </p>
+      <p className="text-lg md:text-xl leading-relaxed mb-6">
+        Na Neomode, cresci como <span className="text-cyan-400">Líder Técnico de Implantação</span>, coordenando backlog técnico, refinamento de tasks, dailies, testes de releases e suporte técnico à operação. Hoje atuo como Coordenador Técnico de Produto e Integrações, com atividades que envolvem gestão de backlog, definição de requisitos, coordenação de sprints, qualidade de entregas e suporte técnico a integrações com parceiros externos.
+        
+        Desenvolvedor com experiência em diversas tecnologias e linguagens de programação.
+      </p>
+      
+      <p className="text-lg md:text-xl leading-relaxed mb-6">
+        Participo ativamente do time que estuda otimizações de infraestrutura cloud, propondo melhorias de código e arquitetura para reduzir custos e aumentar desempenho.  
+      </p>      
+      <p className="text-lg md:text-xl leading-relaxed mb-6">
+        Já liderei projetos de implantação de Omnicanalidade no varejo para grandes marcas como Crocs, CNS, Jogê, Livelo, Rappi e Ifood, com integrações entre marketplaces, ERPs e plataformas como VTEX, Shopify, Bling, Linx, Sankhya, Totvs e diversas outras.
       </p>
 
       <p className="text-lg md:text-xl leading-relaxed mb-6">
@@ -38,29 +47,30 @@ export const AboutMe: React.FC = () => {
       </p>
 
       <p className="text-lg md:text-xl leading-relaxed mb-6">
-        Lidero a equipe técnica com foco em{" "}
+        Hoje lidero a equipe técnica com foco em{" "}
         <span className="text-cyan-400">documentação clara</span>,{" "}
         <span className="text-cyan-400">automação de processos no Jira</span> e
         uso de <span className="text-cyan-400">Kanban</span> para gestão de
         tarefas e backlog. Minha missão é garantir que os projetos estejam
         sempre alinhados com os objetivos estratégicos da empresa.
       </p>
+      
+      <p className="text-lg md:text-xl leading-relaxed mb-6">
+        Utilizo a suíte Atlassian (Jira e Confluence) para organizar tarefas, versionar entregas e manter uma documentação técnica clara e acessível.
+      </p>  
 
-      <p className="text-lg md:text-xl leading-relaxed">
-        Já participei da publicação de e-commerces de grandes marcas como{" "}
-        <span className="text-cyan-400">Electrolux</span>,{" "}
-        <span className="text-cyan-400">Crocs</span>,{" "}
-        <span className="text-cyan-400">PatBo</span>,{" "}
-        <span className="text-cyan-400">Hope</span>,{" "}
-        <span className="text-cyan-400">Samsonite</span>,{" "}
-        <span className="text-cyan-400">Le Postiche</span> entre outras. Sou
-        apaixonado por inovação, eficiência e pessoas.
+      <p className="text-lg md:text-xl leading-relaxed mb-6">
+        Sou apaixonado por inovação, eficiência e pessoas.
       </p>
-      <div className="display flex justify-center">
-        {/* <LottieCustomView
-          src={developerGears}
-          className="w-2/3 h-auto object-cover hover:blur-sm transition-all duration-300"
-        /> */}
+      <div className="flex justify-center">
+        <a
+          href="https://www.linkedin.com/in/lukasburdalongo"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block mt-10 px-6 py-3 border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-[#242424] rounded-lg transition-colors font-medium"
+        >
+          Saiba mais sobre mim
+        </a>
       </div>
     </section>
   );
