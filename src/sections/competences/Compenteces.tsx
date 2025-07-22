@@ -3,6 +3,7 @@ import { FaGraduationCap } from "react-icons/fa";
 import CustomTitle from "../../components/CustomTitle/CustomTittle";
 import type { Certificate } from "../../interfaces/competences/Certificate";
 import CertificatesListView from "../../components/CertificatesListView/CertificateListView";
+import { CustomSection } from "../../components/CustomSection/CustomSection";
 
 
 export const Competences = () => {
@@ -55,7 +56,7 @@ export const Competences = () => {
     },
     {
       id: "5",
-      title: "Montagem e manutenção de Computadores ",
+      title: "Montagem e manutenção de Computadores",
       issuer: "Fundação de Ação Social - FAS",
       issueDate: "mai de 2018",
       credentialCode: "931495afb5cf0bf7d8",
@@ -76,21 +77,20 @@ export const Competences = () => {
   ];
 
   return (
-    <section
+    <CustomSection
       id="competences"
-      className="px-10 my-10 py-10 text-white rounded-xl"
     >
-      <div className="text-5xl flex justify-center gap-4">
+      <div className="flex justify-center text-center items-center space-x-4 text-5xl mb-6">
         <FaGraduationCap />
         <CustomTitle
           text="Formações & Certificados"
           as="h3"
-          className="font-bold text-gray-300 mb-8"
+          className="font-bold"
         />
       </div>
       {/* Formação Acadêmica */}
       {/* Certificados */}
       <CertificatesListView certificates={certificatesData} />
-    </section>
+    </CustomSection>
   );
 };

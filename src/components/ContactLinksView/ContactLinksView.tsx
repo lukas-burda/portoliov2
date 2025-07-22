@@ -10,15 +10,15 @@ interface ContactLinksViewProps {
 
 export const ContactLinksView: React.FC<ContactLinksViewProps> = (props) => {
   return (
-    <section id="contacts">
+    <div>
       {props.showTitle && (
         <CustomTitle
           text="Contatos"
           as="h2"
-          className="text-md font-bold text-white mb-8"
+          className="text-md text-center font-bold"
         />
       )}
-      <div className="flex justify-center space-x-6 text-2xl">
+      <div className="flex justify-center m-5  space-x-6 text-3xl">
         <a
           href={props.githubHref}
           className="hover:text-cyan-400 transition-colors"
@@ -38,6 +38,6 @@ export const ContactLinksView: React.FC<ContactLinksViewProps> = (props) => {
           <FaEnvelope />
         </a>
       </div>
-    </section>
+    </div>
   );
 };

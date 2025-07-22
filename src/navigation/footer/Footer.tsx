@@ -3,25 +3,19 @@ import { ContactLinksView } from "../../components/ContactLinksView/ContactLinks
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="text-white m-4 p-2 gap-4 grid grid-cols-1 md:grid-cols-3 md:text-left font-mono text-lg items-center text-center "> 
-      {/* Left */}
-      <div className="left-align">
-        <p>
-          Feito com <span className="text-cyan-600">❤</span> por Lukas Burda
-        </p>
-      </div>
+    <footer className="flex justify-around font-mono text-lg items-center">
+      <p>
+        Feito com <span className="text-cyan-400">❤</span> por Lukas Burda
+      </p>
 
-      {/* Center */}
-      <div className="center-align">Revisada em jul 2025</div>
-
-      <div className="right-align flex justify-center md:justify-end gap-5 text-lg">
+      <p className="">
         <ContactLinksView
           showTitle={false}
           emailHref="mailto:lukasburdaferreira@gmail.com"
           linkedinHref="https://linkedin.com/in/lukasburdalongo"
           githubHref="https://github.com/lukas-burda"
         />
-      </div>
+      </p>
     </footer>
   );
 };

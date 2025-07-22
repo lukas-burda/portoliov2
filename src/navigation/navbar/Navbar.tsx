@@ -1,17 +1,9 @@
 // src/components/navbar/Navbar.tsx
 import React, { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
-import {
-  FaCode,
-  FaHome,
-  FaLayerGroup,
-  FaUser,
-  FaBrain,
-} from "react-icons/fa";
+import { FaCode, FaHome, FaLayerGroup, FaUser, FaBrain } from "react-icons/fa";
 import type { NavLinkItem } from "../../interfaces/navbar/NavLinkItems";
 import NavLink from "../../components/NavLink/NavLink";
-
-
 
 export const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Renomeado
@@ -40,7 +32,12 @@ export const Navbar: React.FC = () => {
       className: baseNavLinkClasses,
       children: <FaUser size={navIconSize} title="About" />,
     },
-
+    {
+      href: "#skills",
+      text: "Competências",
+      className: baseNavLinkClasses,
+      children: <FaUser size={navIconSize} title="About" />,
+    },
     {
       text: "Portfólio",
       className: baseNavLinkClasses,
@@ -62,9 +59,9 @@ export const Navbar: React.FC = () => {
 
   return (
     <nav className="backdrop-blur-lg py-4 px-4 sm:px-8 fixed top-0 left-0 w-full ">
-      <div className="flex items-center justify-between text-white">
+      <div className="flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <h1 className="font-bold font-mono text-2xl sm:text-3xl text-white tracking-wide">
+          <h1 className="font-bold font-mono text-2xl sm:text-3x tracking-wide">
             <a
               href="/portfolio/"
               onClick={closeMenu}
@@ -82,15 +79,15 @@ export const Navbar: React.FC = () => {
         <div className="sm:hidden">
           <button
             onClick={toggleMenu}
-            className="text-white focus:outline-none focus:ring-2 focus:ring-cyan-300 rounded-md p-1"
+            className="focus:outline-none focus:ring-2 focus:text-cyan-400 rounded-md p-1"
             aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
           >
             {isMobileMenuOpen ? (
-              <div className='className="w-8 h-8'>
+              <div className="w-full h-full">
                 <IoClose />
               </div>
             ) : (
-              <div className='className="w-8 h-8'>
+              <div className="w-full h-full">
                 <IoMenu />
               </div>
             )}
@@ -108,10 +105,8 @@ export const Navbar: React.FC = () => {
         className={`
         sm:hidden
         ${isMobileMenuOpen ? "block" : "hidden"}
-        mt-2
         backdrop-blur-lg 
         rounded-md
-        py-2
         transition-all duration-300 ease-in-out
       `}
       >

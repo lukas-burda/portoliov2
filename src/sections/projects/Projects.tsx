@@ -1,11 +1,11 @@
-
 import { FaCode } from "react-icons/fa";
 import CustomTitle from "../../components/CustomTitle/CustomTittle";
 import { SiteEmbedCard } from "../../components/SiteEmbedCard/SiteEmbedCard";
+import { CustomSection } from "../../components/CustomSection/CustomSection";
 
 export const Projects: React.FC = () => {
   return (
-    <section id="projects" className="px-10 my-10 py-10">
+    <CustomSection id="projects">
       <div className="flex justify-center gap-4 text-5xl">
         <FaCode />
         <CustomTitle
@@ -20,9 +20,7 @@ export const Projects: React.FC = () => {
         description="Projeto histórico e cultural sobre a imigração cigana no Brasil. Desenvolvido e publicado em WordPress com Elementor."
         siteUrl="https://museuromanocuritiba.com/"
       />
-      <div className="flex justify-center">
-        
-      </div>
-    </section>
+      <div className="flex justify-center"></div>
+    </CustomSection>
   );
 };

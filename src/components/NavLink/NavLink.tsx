@@ -28,7 +28,6 @@ const NavLink: React.FC<NavLinkProps> = ({
   };
 
   return (
-    // Este ul agora controla a direção dos itens principais (coluna em mobile, linha em desktop)
     <ul
       className={`
       flex ${
@@ -56,7 +55,7 @@ const NavLink: React.FC<NavLinkProps> = ({
                 onClick={() => handleDropdownToggle(item.text)}
                 className={`
                   flex items-center justify-center sm:justify-start gap-2 font-bold px-3 py-2 rounded-md
-                  text-white hover:text-cyan-400 transition-colors duration-300
+                  hover:text-cyan-400 transition-colors duration-300
                   ${item.className || ""}
                 `}
                 aria-expanded={openDropdown === item.text}
@@ -91,7 +90,7 @@ const NavLink: React.FC<NavLinkProps> = ({
                       onClick={handleLinkClick}
                       className={`
                         flex items-center gap-2 px-3 py-2 rounded-md
-                        text-neutral-200 bg-gray-950 backdrop-blur-lg  hover:text-cyan-300 transition-all duration-200
+                        bg-gray-950 text-neutral-900 dark:text-neutral-50 backdrop-blur-lg  hover:text-cyan-400 transition-all duration-200
                         w-full // Garante que o sublink ocupe a largura total do dropdown
                       `}
                     >
@@ -108,8 +107,7 @@ const NavLink: React.FC<NavLinkProps> = ({
               href={item.href}
               onClick={handleLinkClick}
               className={`
-                flex items-center justify-center sm:justify-start gap-2 font-bold px-3 py-2 rounded-md
-                text-white hover:text-cyan-400 transition-colors duration-300 w-full
+                flex items-center justify-center sm:justify-start gap-2 font-bold px-3 py-2 rounded-md hover:text-cyan-400 transition-colors duration-300 w-full
                 ${item.className || ""}
               `}
             >
